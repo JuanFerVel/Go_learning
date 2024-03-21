@@ -1,0 +1,25 @@
+package main
+
+import (
+	"library/book"
+)
+
+func main() {
+
+	// var myBook = book.Book{ //Sirve para cuando las propiedades de una estructura es publica
+	// 	Tittle: "Moby Dick",
+	// 	Author: "Hernan Melville",
+	// 	Pages:  300,
+	// }
+
+	myBook := book.NewBook("Moby Dick", "Hernan Melville", 300) // Sirve para cuando las propiedades sean privadas
+
+	// myBook.PrintInfo()
+
+	myTextBook := book.NewTextBook("Comunicación", "Jaime gamarra", 261, "Santillana SAC", "Secundaria")
+
+	// myTexBook.PrintInfo()
+
+	book.Print(myBook)
+	book.Print(myTextBook)
+}

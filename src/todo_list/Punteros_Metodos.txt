@@ -1,0 +1,31 @@
+package main
+
+import "fmt"
+
+type Persona struct {
+	nombre string
+	edad   int
+	correo string
+}
+
+func (p *Persona) diHola() {
+	fmt.Println("Hola Mi nombre es", p.nombre)
+}
+
+func main() {
+
+	p := Persona{"Alex", 23, "alex@gmail.com"}
+	p.diHola()
+	/*var x int = 10
+	// var puntero *int = &x
+
+	fmt.Println(x)
+	editar(&x) // Se pasa la memoria de la variable
+	//editar(x) // Se pasa la copia de la memoria de la variable
+	fmt.Println(x)*/
+}
+
+func editar(x *int) {
+	*x = 20 // Se actualiza la memoria de la variable x sin crear una nueva
+	//x = 20 // Se está creando una nueva varible diferente de la recibida
+}

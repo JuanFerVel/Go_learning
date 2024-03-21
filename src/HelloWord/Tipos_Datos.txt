@@ -1,0 +1,27 @@
+package main
+
+import (
+	"fmt"
+
+	"rsc.io/quote"
+)
+
+func main() {
+	fmt.Println("Hola Mundo")
+	fmt.Println(quote.Hello())
+
+	// var integer int64
+	// var float float64
+	// var valueBool bool = true
+	//var a byte = 'a'
+	// s := "hola"
+	// fullName := "Juan Velandia \t (alias \"Ajax-Mid\")\n"
+	var r rune = 'ʥ'
+
+	// fmt.Println(math.MaxFloat64)
+	// fmt.Println(fullName)//-> Juan Velandia    (alias "Ajax-Mid")
+	// fmt.Println(a)// Imprime el vamor de código Ascii -> 97
+	// fmt.Println(s[0]) // Imprime Código Ascci de la primera posición -> 104
+	fmt.Println(r) //Imprime el valor unicode del contenido
+
+}

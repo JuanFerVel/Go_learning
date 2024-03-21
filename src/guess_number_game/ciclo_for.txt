@@ -1,0 +1,53 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var i int
+
+	for i <= 10 {
+		fmt.Println(i)
+		i++
+	}
+
+	for i := 0; i <= 10; i++ { //Inicialización;Condición;Actualización
+		fmt.Println(i)
+		// if i == 5 { //Al llgar a 5 se rompre el bucle
+		// 	break
+		// }
+		if i == 5 { // Al llegar a 5 salta a la siguiente iteración saltandose el código que esté delante de él
+			continue
+		}
+	}
+
+	/*if t := time.Now(); t.Hour() < 12 { //Se puede incializar la variable y luego usarla
+		fmt.Println("Mañana")
+	} else if t.Hour() < 17 {
+		fmt.Println("Tarde")
+	} else {
+		fmt.Print("Noche")
+	}
+
+	switch t := time.Now(); {
+	case t.Hour() < 12:
+		fmt.Println("Mañana")
+	case t.Hour() < 17:
+		fmt.Println("Tarde")
+	default:
+		fmt.Println("Noche")
+	}
+
+	switch os := runtime.GOOS; os {
+	case "windows":
+		fmt.Println("Go run -> Windows")
+	case "linux":
+		fmt.Println("Go run -> Linux")
+	case "darwin":
+		fmt.Println("Go run -> MacOs")
+	default:
+		fmt.Println("Go run -> Otro")
+	}*/
+
+}

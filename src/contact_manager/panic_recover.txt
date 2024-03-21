@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func divide(dividendo, divisor int) {
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println(r)
+		}
+	}()
+	validaZero(divisor)
+	fmt.Println(dividendo / divisor)
+}
+
+func validaZero(divisor int) {
+	if divisor == 0 {
+		panic("No puedes Dividir Entre 0")
+	}
+}
+
+func main() {
+	divide(100, 10)
+	divide(100, 0)
+	divide(100, 2)
+	divide(100, 4)
+}

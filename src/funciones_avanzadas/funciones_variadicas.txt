@@ -1,0 +1,27 @@
+package main
+
+import "fmt"
+
+func suma(name string, nums ...int) (string, int) {
+	// fmt.Printf("%T - %v", nums, nums)
+	var total int
+	for _, num := range nums {
+		total += num
+	}
+	return name, total
+}
+
+func imprimirDatos(datos ...interface{}) {
+	for _, dato := range datos {
+		fmt.Printf("%T - %v\n", dato, dato)
+	}
+}
+
+func main() {
+	name, rest := suma("Juan", 13, 54, 33, 54, 1, 2, 34, 3)
+	fmt.Printf("%s el Resultado es %d \n", name, rest)
+	a := []int{1, 2, 3}
+
+	imprimirDatos("Hola", 23, true, 3.14, a)
+
+}

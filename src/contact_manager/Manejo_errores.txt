@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+)
+
+func divide(dividendo, divisor int) (int, error) {
+	if divisor == 0 {
+		// return 0, errors.New("No se puede dividir por 0")
+		return 0, fmt.Errorf("No se puede dividir por 0")
+	}
+	return dividendo / divisor, nil
+}
+
+func main() {
+	rest, err := divide(10, 0)
+	if err != nil {
+		fmt.Println("Error:", err)
+	} else {
+		fmt.Print("Resultado:", rest)
+	}
+	// str := "123f"
+	// num, err := strconv.Atoi(str)
+	// if err != nil {
+	// 	fmt.Println("Error: ", err)
+	// 	return
+	// } else {
+	// 	fmt.Println("Numero: ", num)
+	// }
+}

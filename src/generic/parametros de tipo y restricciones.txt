@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+type integer int
+
+func suma[T ~int | ~float64](nums ...T) T {
+	var total T
+	for _, num := range nums {
+		total += num
+	}
+	return total
+}
+
+func main() {
+	var num integer = 100
+	var num2 integer = 300
+	fmt.Println(suma(2, 3, 4, 3.5))
+	fmt.Println(suma(num, num2))
+	fmt.Println(suma[float64](2, 3, 4, 3.5))
+	fmt.Println(suma[int](2, 3, 4))
+}

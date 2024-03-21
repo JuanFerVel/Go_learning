@@ -1,0 +1,29 @@
+package main
+
+import "fmt"
+
+func main() {
+	colors := map[string]string{
+		"rojo":   "#FF0000",
+		"verde":  "#00FF00",
+		"Blanco": "#FFFFFF",
+	}
+	fmt.Println(colors)
+	colors["negro"] = "#000000"
+
+	fmt.Println(colors)
+
+	if valor, ok := colors["rojo"]; ok {
+		fmt.Println(valor)
+	} else {
+		fmt.Println("No existe esta clave")
+	}
+
+	delete(colors, "Blanco")
+	fmt.Println(colors)
+
+	for index, value := range colors {
+		fmt.Printf("Clave: %s \t Valor: %s \n", index, value)
+	}
+
+}

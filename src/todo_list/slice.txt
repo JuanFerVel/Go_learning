@@ -1,0 +1,29 @@
+package main
+
+import "fmt"
+
+func main() {
+	/*diasSemana := []string{"Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"}
+
+	diaRebanada := diasSemana[0:5]
+	fmt.Println(diaRebanada)
+
+	diaRebanada = append(diaRebanada, "Viernes", "Sabado", "Otro día")
+	fmt.Println(diaRebanada)
+
+	diaRebanada = append(diaRebanada[:2], diaRebanada[3:]...) //Se elimina Martes
+	fmt.Println(diaRebanada)
+	fmt.Println(len(diaRebanada))
+	fmt.Println(cap(diaRebanada))*/
+	// nombres := make([]string, 5)
+	// nombres[0] = "Alex"
+	// fmt.Print(nombres)
+
+	rebanada1 := []int{1, 2, 3, 4, 5}
+
+	rebanada2 := make([]int, 5)
+
+	copy(rebanada2, rebanada1) // Copea los elementos de Rebanada1 a Rebanada2
+	fmt.Println(rebanada1)
+	fmt.Println(rebanada2)
+}

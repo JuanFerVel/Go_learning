@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+type Persona struct {
+	nombre string
+	edad   int
+	correo string
+}
+
+func main() {
+	// var p Persona
+	// p.nombre = "Lucas"
+	// p.edad = 23
+	// p.correo = "lucas@gmail.com"
+	p := Persona{"Alex", 23, "alex@gmail.com"}
+	p.edad = 30
+	fmt.Println(p)
+}

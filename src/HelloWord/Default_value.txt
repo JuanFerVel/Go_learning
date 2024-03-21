@@ -1,0 +1,22 @@
+package main
+
+import (
+	"fmt"
+
+	"rsc.io/quote"
+)
+
+func main() {
+	fmt.Println("Hola Mundo")
+	fmt.Println(quote.Hello())
+
+	var (
+		defaultInt    int
+		defailUit     uint
+		defaultFloat  float32
+		defaulBool    bool
+		defaultString string
+	)
+	fmt.Println(defaultInt, defailUit, defaultFloat, defaulBool, defaultString)
+
+}

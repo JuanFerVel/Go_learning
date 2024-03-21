@@ -1,0 +1,28 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	a := 10
+	b := 5
+
+	b++
+	b--
+
+	a += 3
+	b -= 2
+
+	fmt.Println(a + b)
+	fmt.Println(a - b)
+	fmt.Println(a * b)
+	fmt.Println(float32(a) / float32(b))
+	fmt.Println(a % b)
+	fmt.Println(math.Pi)
+	fmt.Println(math.E)
+	fmt.Println(math.Pow(2, 7))
+	fmt.Println(math.Sqrt(64))
+	fmt.Println(math.Cbrt(27))
+}

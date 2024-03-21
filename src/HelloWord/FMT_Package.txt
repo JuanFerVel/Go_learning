@@ -1,0 +1,27 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	fmt.Print("Hola")
+	fmt.Println("Hola")
+
+	var name string
+	var age int
+
+	fmt.Print("Ingrese su nombre: ")
+	fmt.Scan(&name)
+	fmt.Print("Ingrese su edad: ")
+	fmt.Scan(&age)
+
+	fmt.Printf("Hola, me llamo %s, y tengo %d años \n", name, age) //Concatenar datos conociendo el tipo de dato que se ingresará
+	// fmt.Printf("Hola, me llamo %v, y tengo %v años \n", name, age) //Concatenar datos sin conocer el tipo de dato que se ingresará
+
+	// greetring := fmt.Sprintf("Hola, me llamo %s, y tengo %d años", name, age)
+	// fmt.Print(greetring)
+
+	fmt.Printf("Es tipo de dato de name es: %T \n", name)
+	fmt.Printf("Es tipo de dato de age es: %T \n", age)
+}

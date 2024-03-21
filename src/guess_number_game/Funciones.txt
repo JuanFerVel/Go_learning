@@ -1,0 +1,27 @@
+package main
+
+import "fmt"
+
+func main() {
+	rest := hello("parametros")
+	fmt.Println(rest)
+
+	restSum, mensaje := calc(2, 4)
+	fmt.Println(mensaje, "el resultado de la suma es:", restSum)
+	restMul, message := calcMul(2, 4)
+	fmt.Println(message, "el resultado de la multimplicación es:", restMul)
+}
+
+func hello(text string) string {
+	varReturn := "Hola desde la funcion con " + text
+	return varReturn
+}
+
+func calc(a, b int) (int, string) {
+	return a + b, "Hola"
+}
+func calcMul(a, b int) (mul int, message string) {
+	mul = a * b
+	message = "Hey!"
+	return
+}

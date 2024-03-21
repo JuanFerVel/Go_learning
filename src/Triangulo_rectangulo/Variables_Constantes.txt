@@ -1,0 +1,62 @@
+package main
+
+import (
+	"fmt"
+
+	"rsc.io/quote"
+)
+
+// Declaración e inicialización fuera de las funciones
+// var (
+//
+//	firstName, lastName, age = "hola", "mundo", 19
+//
+// )
+
+//Declaración de constantes- Es necesario declarar e inicializar al mismo tiempo
+
+// const Pi float32 = 3.14
+const Pi = 3.14
+
+const (
+	X = 100
+	Y = 0b1010 // Binario
+	Z = 0o12   // Octal
+	W = 0xFF   // Hexadecimal
+)
+
+const (
+	Domingo = iota + 1
+	Lunes
+	Martes
+	Miercoles
+	Jueves
+	Viernes
+	Sabado
+)
+
+func main() {
+	fmt.Println("Hola Mundo")
+	fmt.Println(quote.Hello())
+
+	//Declaración de Variables -->
+	// var firstName, lastName string
+	// var age int
+	// var (
+	// 	firstName, lastName string
+	// 	age int
+	// )
+
+	//Asignación de valores -->
+	// firstName = "Juan"
+	// lastName = "Velandia"
+	// age = 19
+
+	//Declarar e inicializar, ":=" se usa solo para asignar valores dentro de las funciones
+	firstName, lastName, age := "Juan", "mundo", 19
+
+	fmt.Println(firstName, lastName, age)
+	fmt.Println("Pi: ", Pi)
+	fmt.Println(X, Y, Z)
+	fmt.Println(Domingo, Lunes, Martes, Miercoles, Jueves, Sabado)
+}

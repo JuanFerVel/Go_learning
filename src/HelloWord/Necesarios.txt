@@ -1,0 +1,8 @@
+ - Reparación: 136316 - Acceso a la visualización de videos en la plataforma UDEMY e instalación de Go y MySql Community.
+
+################################## CÓDIGOS IMPORTANTES #####################################
+
+Importar una libreria de terceros (PowerShell): go get rsc.io/quote
+Correr una página Go: go run nombrePagina.go
+Compilar una página (Genera un archivo .exe): go build nombrePagina.go
+

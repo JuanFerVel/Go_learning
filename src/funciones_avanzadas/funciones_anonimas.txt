@@ -1,0 +1,30 @@
+package main
+
+import "fmt"
+
+// func saludar(name string, f func(string)) {
+// 	f(name)
+// }
+
+func duplicar(n int) int {
+	return n * 2
+}
+func triplicar(n int) int {
+	return n * 3
+}
+
+func aplicar(f func(int) int, n int) int {
+	return f(n)
+}
+
+func main() {
+	// saludo := func(name string) {
+	// 	// fmt.Println("Hello i'm an anonime function")
+	// 	fmt.Printf("Hello %s i'm an anonymous function\n", name)
+	// }
+	// saludar("Juan", saludo)
+	rest1 := aplicar(duplicar, 5)
+	rest2 := aplicar(triplicar, 5)
+	fmt.Println(rest1)
+	fmt.Println(rest2)
+}
