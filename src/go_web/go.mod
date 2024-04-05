@@ -1,4 +1,4 @@
-module github.com/JuanFerVel/Go_learning
+module go_Web
 
 go 1.22.1
 
